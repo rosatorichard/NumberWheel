@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
         MediaPlayer media = MediaPlayer.create(this,R.raw.sound);
 
-        float log=(float)Math.abs(prog);
+        float soundBefore=(float)Math.abs(prog);
+        float log=soundBefore/100;
         media.setVolume(0,log);
         media.start();
 
